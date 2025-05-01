@@ -1,0 +1,131 @@
+@use '../../../../../styles.scss' as *;
+
+.wrapper {
+  padding: 0 10%;
+}
+
+.card {
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px $shadow-color;
+  background-image: url('../../../../../assets/img/Mask-Group-19.png');
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 110px;
+}
+
+.title {
+  display: flex;
+  gap: 20px;
+
+  div {
+    flex-grow: 1;
+
+    h4 {
+      margin: 0;
+      text-align: left;
+      font: normal normal bold 18px/23px Montserrat;
+      letter-spacing: 0px;
+      color: $grey-3;
+    }
+
+    b {
+      text-align: left;
+      font: normal normal bold 12px/15px Verdana;
+      letter-spacing: 0px;
+      color: $grey-3;
+    }
+  }
+
+  a {
+    text-align: right;
+    text-decoration: underline;
+    font: normal normal 600 15px/17px Montserrat;
+    letter-spacing: 0px;
+    color: $primary-green;
+  }
+}
+
+.info {
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  div {
+    width: 172px;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        margin-right: 5px;
+        padding: 0;
+        width: 14px;
+        height: 14px;
+      }
+
+      p {
+        margin: 0;
+        text-align: center;
+        font: normal normal normal 14px/18px Verdana;
+        letter-spacing: 0px;
+      }
+    }
+
+    b {
+      margin: 5px 0 0;
+      padding: 4px 12px;
+      border-radius: 4px;
+      text-align: center;
+      font: normal normal bold 14px/22px Montserrat;
+      letter-spacing: 0px;
+      color: $grey-3;
+    }
+
+    .date {
+      background-color: $light-blue;
+    }
+
+    .goal {
+      background-color: $light-orange;
+    }
+
+    .balance {
+      background-color: $light-green;
+    }
+  }
+}
+
+.altern {
+  margin-left: 5px;
+  margin-right: 100px;
+  padding: 20px 0 20px;
+
+  a {
+    text-align: left;
+    font: normal normal bold 14px/16px Montserrat;
+    letter-spacing: 0px;
+    color: $primary-green;
+    cursor: pointer;
+
+    span {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 24px;
+        height: 24px;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+}

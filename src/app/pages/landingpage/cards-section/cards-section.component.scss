@@ -1,0 +1,75 @@
+@use '../../../../styles.scss' as *;
+
+section {
+  padding: 0;
+
+  .slider {
+    padding: 40px calc(10% + 20px);
+    display: flex;
+    overflow-x: auto;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    border: none;
+    border-radius: 20px;
+    background-color: $primary-green;
+    cursor: pointer;
+    align-content: center;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .back {
+    margin: 220px 0 0 5%;
+  }
+
+  .next {
+    right: 0;
+    margin: -270px 10% 0 auto;
+    transform: rotate(180deg);
+  }
+
+  .visible {
+    display: block;
+  }
+
+  .button-container {
+    padding: 0 10% 40px;
+
+    button {
+      width: auto;
+      height: 50px;
+      margin: 0 auto;
+      padding: 0 25px;
+      border-radius: 25px;
+      background-color: $grey-2;
+      display: block;
+      position: relative;
+
+      p {
+        text-align: center;
+        font: normal normal bold 16px/12px Montserrat;
+        letter-spacing: 0px;
+        color: $grey-3;
+      }
+    }
+
+    .selectable {
+      background-color: $primary-green;
+
+      p {
+        color: white;
+      }
+    }
+  }
+}

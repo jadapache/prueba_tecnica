@@ -1,0 +1,21 @@
+<section id="cards" #cards>
+    <button class="back" [ngClass]="{ 'visible': sliderScroll?.nativeElement.scrollLeft >= 1 }" (click)="scroll(-1)">
+        <img src="../../../../assets/img/arrow.svg">
+    </button>
+    <div class="slider" #slider>
+        <ng-container *ngFor="let product of products">
+            <app-card [product]="product" [selected]="selectedProducts.includes(product)" (onSelected)="toggleSelection($event)"></app-card>
+        </ng-container>
+        <app-featured-card></app-featured-card>
+    </div>
+    <button class="next" [ngClass]="{ 'visible': sliderScroll?.nativeElement.scrollLeft <= (sliderScroll?.nativeElement.scrollWidth - sliderScroll?.nativeElement.clientWidth - 1) }" (click)="scroll(1)">
+        <img src="../../../../assets/img/arrow.svg">
+    </button>
+    <div class="button-container">
+        <button [ngClass]="{'selectable': selectedProducts.length > 0}">
+            <p>
+                ASOCIAR A OBJETIVO
+            </p>
+        </button>
+    </div>
+</section>

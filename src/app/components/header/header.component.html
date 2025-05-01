@@ -1,0 +1,71 @@
+<header>
+  <div>
+      <i class="las la-bars menu-toggle" (click)="toggleMenu()"></i>
+      <div>
+          <span>
+              <img src="../../../assets/img/Group_123.svg" >
+          </span>
+          <nav>
+              <ul>
+                  <li>
+                      <a href="">
+                          <span>
+                              <img src="../../../assets/img/Happy.svg" >
+                              <p>Your Finnancial Planner</p>
+                          </span>
+                      </a>
+                      <a href="">
+                          <span>
+                              <img src="../../../assets/img/hand3.svg" >
+                              <p>Contributions</p>
+                          </span>
+                      </a>
+                  </li>
+              </ul>
+              <img src="../../../assets/img/comp_faq.svg" >
+          </nav>
+      </div>        
+  </div>
+  <nav [ngClass]=" {'menu': true, 'open': open}">
+      <ul>
+          <li>
+              <a routerLink="/home" [ngClass]=" {'selected': evaluateIsInroute('home')}">
+                  <span>
+                      <img src="../../../assets/img/home.svg" >
+                      <p>Inicio</p>
+                  </span>
+              </a>
+              <a routerLink="/contracts" [ngClass]=" {'selected': evaluateIsInroute('contracts')}">
+                  <span>
+                      <img src="../../../assets/img/hoja1.svg" >
+                      <p>Contratos</p>
+                  </span>
+              </a>
+              <a routerLink="/actions" [ngClass]=" {'selected': evaluateIsInroute('actions')}">
+                  <span>
+                      <img src="../../../assets/img/money.svg" >
+                      <p>Acciones</p>
+                  </span>
+              </a>
+              <a routerLink="/objectives"  [ngClass]=" {'selected': evaluateIsInroute('objectives')}">
+                  <span>
+                      <img src="../../../assets/img/star.svg" >
+                      <p>Objetivos</p>
+                  </span>
+              </a>
+              <a routerLink="/tools"  [ngClass]=" {'selected': evaluateIsInroute('tools')}">
+                  <span>
+                      <img src="../../../assets/img/Tool.svg" >
+                      <p>Herramientas</p>
+                  </span>
+              </a>
+              <a routerLink="/customer-service"  [ngClass]=" {'selected': evaluateIsInroute('customer-service')}">
+                  <span>
+                      <img src="../../../assets/img/talk2.svg" >
+                      <p>Atención al cliente</p>
+                  </span>
+              </a>
+          </li>
+      </ul>
+  </nav>
+</header>

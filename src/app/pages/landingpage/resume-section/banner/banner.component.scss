@@ -1,0 +1,58 @@
+@use '../../../../../styles.scss' as *;
+
+div {
+  margin: 0 0 -80px 0;
+  background-size: cover;
+  background-image: url('../../../../../assets/img/bgObjective.jpg');
+
+  div {
+    margin: 0;
+    padding: 40px 10% 120px;
+    background-image: none;
+    background: linear-gradient(to bottom, #0016454B, #687D7F);
+
+    a {
+      color: white;
+
+      span {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 16px;
+          height: 16px;
+          padding: 17px 17px 17px 0;
+        }
+
+        p {
+          margin: 0;
+          padding: 0;
+          font: normal normal bold 12px/17px Verdana;
+        }
+      }
+    }
+
+    .info {
+      display: block;
+      align-content: center;
+
+      h3 {
+        margin: 20px 15px 15px;
+        text-align: center;
+        font: normal normal bold 25px/30px Montserrat;
+        font-size: 30px;
+        letter-spacing: 0px;
+        color: white;
+      }
+
+      p {
+        margin: 5px;
+        text-align: center;
+        font: normal normal normal 16px/24px Verdana;
+        font-size: 24px;
+        letter-spacing: 0px;
+        color: white;
+      }
+    }
+  }
+}

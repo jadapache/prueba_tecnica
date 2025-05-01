@@ -1,0 +1,17 @@
+<div (click)="toggleCheck(product)" class="card" [ngClass]="{'selected': selected}">
+    <div class="checkbox-container" (click)="toggleCheck(product)">
+        <input type="checkbox" (click)="toggleCheck(product)" [(ngModel)]="selected">
+        <span class="checkbox-custom" (click)="toggleCheck(product)"></span>
+    </div>
+    <h3 class="name">{{product.name}}</h3>
+    <h4>#{{product.number}}</h4>
+    <div class="divider"></div>
+    <h3>Tu balance:</h3>
+    <h4 class="balance">${{formatNumber(product.balance.toString())}}</h4>
+    <div class="details">
+        <img src="../../../../../assets/img/Trofeo.svg">
+        <p>
+            {{product.detail}}
+        </p>
+    </div>
+</div>
